@@ -1,0 +1,27 @@
+---
+title: "README"
+output: html_document
+---
+
+This document describes the how the run.analysis.R script works and the code book describing the variables of the resulting data set.  The new data set creates a tidy version of the Human Activity Recognition Using Smartphones Data Set.
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+For each record in the dataset it is provided: 
+
+1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+    + Estimated body acceleration is in three files: *body_acc_x_test.txt*, *body_acc_y_test.txt*, and *body_acc_z_test.txt*
+    + Triaxial acceleration from the accelerometer (total acceleration) is in three files: *total_acc_x_test.txt*, *total_acc_y_test.txt*, and *total_acc_z_test.txt*
+2. Triaxial Angular velocity from the gyroscope. 
+    + Three files: *body_gyro_x_test.txt*, *body_gyro_y_test.txt*, and *body_gyro_z_test.txt*
+3. A 561-feature vector with time and frequency domain variables. 
+    + *X_test.txt* contains test group data
+4. Its activity label. 
+    + *y_test.txt* contains the test labels (integers, 1-6)
+5. An identifier of the subject who carried out the experiment.
+    + *subject_test.txt* contains the code for the subject (2, 4, 9, 10, 12, 13, 18, 20, 24)  
+    
+Additionally, the following data sets are used:
+
+1. *activity_labels.txt* lists the activity labels for activities 1-6.  This links the class labels with their activity name.
+2. *features.txt* lists the 561 feature names
