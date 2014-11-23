@@ -1,0 +1,137 @@
+---
+title: "Data Dictionary for Getting and Cleaning Data Course Project"
+output: html_document
+---
+
+*subject*  
+class - integer, range = 1:30  
+An identifier of the subject who carried out the experiment.
+
+*activity_number*  
+class = numeric, range = 1:6  
+number representing a unique type of activity
+
+*activity_name*  
+class = character
+Description of the activity
+
+activity_number | activity_name
+--------------- | --------------- 
+1               | "WALKING"  
+2               | "WALKING_UPSTAIRS"
+3               | "WALKING_DOWNSTAIRS"
+4               | "SITTING"
+5               | "STANDING"
+6               | "LAYING"  
+
+*type*  
+class = character  
+"test" or "train" depending on whether the subject came from the test or train group
+
+The remaining columns include average data from the following measurements:  
+    1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+    2. Estimated body acceleration is labeled as *body_acc_*
+    3. Triaxial acceleration from the accelerometer (total acceleration) is labeled as *total_acc_*
+    4. Triaxial Angular velocity from the gyroscope is labeld as *body_gyro_*
+
+data name             | mean(s)             | st devs   |X, Y, Z components
+--------------------- | ------------------- | --------- | ----------------- |
+tBodyAcc-             | mean()-             | std()-    |XYZ                |
+tGravityAcc-          | mean()-             | std()-    |XYZ                |
+tBodyAccJerk-         | mean()-             | std()-    |XYZ                |
+tBodyGyro-            | mean()-             | std()-    |XYZ                |
+tBodyGyroJerk-        | mean()-             | std()-    |XYZ                |
+tBodyAccMag-          | mean()-             | std()-    |                   |
+tGravityAccMag-       | mean()-             | std()-    |                   |   
+tBodyAccJerkMag       | mean()-             | std()-    |                   |    
+tBodyGyroMag-         | mean()-             | std()-    |                   |    
+tBodyGyroJerkMag-     | mean()-             | std()-    |XYZ                |
+fBodyAcc-             | mean()-, meanFreq() | std()-    |XYZ                |
+fBodyAccJerk-         | mean()-, meanFreq() | std()-    |XYZ                |
+fBodyGyro-            | mean()-, meanFreq() | std()-    |XYZ                |
+fBodyAccMag-          | mean()-, meanFreq() | std()-    |XYZ                |
+fBodyBodyAccJerkMag-  | mean()-, meanFreq() | std()-    |                   |    
+fBodyBodyGyroMag-     | mean()-, meanFreq() | std()-    |                   |    
+fBodyBodyGyroJerkMag- | mean()-, meanFreq() | std()-    |                   |    
+
+Column names and numbers:
+
+ [5] *tBodyAcc-mean()-X*             
+ [6] *tBodyAcc-mean()-Y*            
+ [7] *tBodyAcc-mean()-Z*  
+ [8] *tGravityAcc-mean()-X*            
+ [9] *tGravityAcc-mean()-Y*  
+[10] *tGravityAcc-mean()-Z*          
+[11] *tBodyAccJerk-mean()-X*  
+[12] *tBodyAccJerk-mean()-Y*     
+[13] *tBodyAccJerk-mean()-Z*  
+[14] *tBodyGyro-mean()-X*   
+[15] *tBodyGyro-mean()-Y*  
+[16] *tBodyGyro-mean()-Z*       
+[17] *tBodyGyroJerk-mean()-X*  
+[18] *tBodyGyroJerk-mean()-Y*   
+[19] *tBodyGyroJerk-mean()-Z*  
+[20] *tBodyAccMag-mean()*            
+[21] *tGravityAccMag-mean()*  
+[22] *tBodyAccJerkMag-mean()*       
+[23] *tBodyGyroMag-mean()*  
+[24] *tBodyGyroJerkMag-mean()*   
+[25] *fBodyAcc-mean()-X*  
+[26] *fBodyAcc-mean()-Y*   
+[27] *fBodyAcc-mean()-Z*  
+[28] *fBodyAcc-meanFreq()-X*   
+[29] *fBodyAcc-meanFreq()-Y*  
+[30] *fBodyAcc-meanFreq()-Z*   
+[31] *fBodyAccJerk-mean()-X*  
+[32] *fBodyAccJerk-mean()-Y*   
+[33] *fBodyAccJerk-mean()-Z*  
+[34] *fBodyAccJerk-meanFreq()-X*   
+[35] *fBodyAccJerk-meanFreq()-Y*  
+[36] *fBodyAccJerk-meanFreq()-Z*   
+[37] *fBodyGyro-mean()-X*  
+[38] *fBodyGyro-mean()-Y*   
+[39] *fBodyGyro-mean()-Z*  
+[40] *fBodyGyro-meanFreq()-X*   
+[41] *fBodyGyro-meanFreq()-Y*  
+[42] *fBodyGyro-meanFreq()-Z*   
+[43] *fBodyAccMag-mean()*  
+[44] *fBodyAccMag-meanFreq()*   
+[45] *fBodyBodyAccJerkMag-mean()*  
+[46] *fBodyBodyAccJerkMag-meanFreq()*   
+[47] *fBodyBodyGyroMag-mean()*  
+[48] *fBodyBodyGyroMag-meanFreq()*   
+[49] *fBodyBodyGyroJerkMag-mean()*  
+[50] *fBodyBodyGyroJerkMag-meanFreq()*   
+[51] *tBodyAcc-std()-X*  
+[52] *tBodyAcc-std()-Y*   
+[53] *tBodyAcc-std()-Z*  
+[54] *tGravityAcc-std()-X*   
+[55] *tGravityAcc-std()-Y*  
+[56] *tGravityAcc-std()-Z*   
+[57] *tBodyAccJerk-std()-X*  
+[58] *tBodyAccJerk-std()-Y*   
+[59] *tBodyAccJerk-std()-Z*  
+[60] *tBodyGyro-std()-X*   
+[61] *tBodyGyro-std()-Y*  
+[62] *tBodyGyro-std()-Z*   
+[63] *tBodyGyroJerk-std()-X*  
+[64] *tBodyGyroJerk-std()-Y*   
+[65] *tBodyGyroJerk-std()-Z*  
+[66] *tBodyAccMag-std()*   
+[67] *tGravityAccMag-std()*  
+[68] *tBodyAccJerkMag-std()*   
+[69] *tBodyGyroMag-std()*  
+[70] *tBodyGyroJerkMag-std()*   
+[71] *fBodyAcc-std()-X*  
+[72] *fBodyAcc-std()-Y*   
+[73] *fBodyAcc-std()-Z*  
+[74] *fBodyAccJerk-std()-X*   
+[75] *fBodyAccJerk-std()-Y*  
+[76] *fBodyAccJerk-std()-Z*   
+[77] *fBodyGyro-std()-X*  
+[78] *fBodyGyro-std()-Y*   
+[79] *fBodyGyro-std()-Z*  
+[80] *fBodyAccMag-std()*   
+[81] *fBodyBodyAccJerkMag-std()*  
+[82] *fBodyBodyGyroMag-std()*   
+[83] *fBodyBodyGyroJerkMag-std()*   
